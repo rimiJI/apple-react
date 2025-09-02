@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="text">현재 숫자: 0</p>
+    <button id="btn">더하기 버튼</button>
+
+    <script>
+      let count = 0;
+      const text = document.getElementById("text");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        count++;
+        text.textContent = "현재 숫자: " + count;
+      });
+    </script>
+  </body>
+</html>
